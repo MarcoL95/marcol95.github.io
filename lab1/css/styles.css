@@ -2,3 +2,83 @@ body {
     background-color: black;
     color: gray;
 }
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /* links within "nav" container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* remove underline */
+    color: white; /* by default, links are blue */
+}
+
+nav a:hover { /* pseudo class */
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+    transition: .9s; /* transition efect */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    color: green;
+    font-size: .8em;
+    }
+
+nav a.active {
+    color: orange;
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+}
+
+ul {
+    width:500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby {
+    color: yellow;
+}
+
+
+body{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#contact-content {
+    display: flex;
+    justify-content: center;
+}
