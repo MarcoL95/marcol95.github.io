@@ -3,6 +3,10 @@
     <head>
         <title> Guess a Number </title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -18,11 +22,20 @@
           <button id="resetBtn"> Reset </button> 
             <div id = "feedback"></div>
             <div> Previous Guesses: 
-                <span id = "guesses">
-
-                </span> </div>
+                <span id = "guesses"></span>
+            </div>
+            <div id = "remaining"></div>
+            <div id = "score"> Wins: <span id="wins">0</span> Losses: <span id="losses">0</span></div>
         </div>
 
+        <footer>
+            <p>
+                <hr>
+                CST336 Internet Programming. 2026&copy; Lara <br>
+                Background image source: 
+                <a href="https://pixabay.com/photos/question-mark-problem-question-2546106/" target="_blank">Pixabay</a>
+            </p>
+        </footer>
 
         <script src="js/script.js"></script>
     </body>
