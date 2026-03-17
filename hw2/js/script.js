@@ -10,7 +10,7 @@ document.querySelector("button").addEventListener("click", gradeQuiz);
 displayQ4Choices();
 
 function displayQ4Choices() {
-    let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"];
+    let q4ChoicesArray = [" Maine ", " Rhode Island ", " Maryland ", " Delaware "];
     q4ChoicesArray = _.shuffle(q4ChoicesArray);
     for (let i = 0; i < q4ChoicesArray.length; i++) {
         document.querySelector("#q4Choices").innerHTML += `<input type="radio" name="q4" id="${q4ChoicesArray[i]}"
@@ -39,10 +39,10 @@ function gradeQuiz() {
     score = 0;
     let q1Response = document.querySelector("#q1").value.toLowerCase();
     let q2Response = document.querySelector("#q2").value;
-    let q4Response = document.querySelector("input[name='q4']:checked").value;
+    let q4Response = document.querySelector("input[name='q4']:checked").value.trim();
     let q5Response = document.querySelector("#q5").value.toLowerCase();
     let q6Response = document.querySelector("#q6").value;
-    let q7Response = document.querySelector("#q7").value;
+    let q7Response = document.querySelector("input[name='q7']:checked").value;
     let q9Response = document.querySelector("#q9").value;
     let q10Response = document.querySelector("#q10").value;
     
@@ -87,7 +87,7 @@ function gradeQuiz() {
     }
 
     //Grading Question 6
-    if (q6Response == "Houston") {
+    if (q6Response == "houston") {
         rightAnser(6);
     }
     else {
@@ -103,7 +103,7 @@ function gradeQuiz() {
     }
 
     //Grading Question 8
-    if (document.querySelector("#alaska").checked && document.querySelector("#hawaii").checked && !document.querySelector("#florida").checked && !document.querySelector("#maine").checked) {
+    if (document.querySelector("#Alaska").checked && document.querySelector("#Hawaii").checked && !document.querySelector("#Florida").checked && !document.querySelector("#Maine").checked) {
         rightAnser(8);
     }
     else {
@@ -111,7 +111,7 @@ function gradeQuiz() {
     }
 
     //Grading Question 9
-    if (q9Response == "4") {
+    if (q9Response == "5") {
         rightAnser(9);
     }
     else {
@@ -143,7 +143,7 @@ function rightAnser(index) {
     document.querySelector(`#q${index}Feedback`).innerHTML = "Correct!";
     document.querySelector(`#q${index}Feedback`).className = "bg-success text-white";
     document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/checkmark.png' alt='checkmark'>";
-    score += 20;
+    score += 10;
 }
 
 function wrongAnswer(index) {

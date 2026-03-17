@@ -9,105 +9,152 @@
 </head>
 <body class="text-center">
     
-    <h1 class="p-5 bg-info"> US Geography Quiz </h1>
+    <h1 class="p-5 mb-4 bg-info text-dark fw-bold shadow">🌎 US Geography Quiz </h1>
     
-    <br>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
     
-    <h3><span id="markImg1"></span> What is the capital of California? </h3>
-    <input type="text" id="q1">
-    <br><br>
-    <div id="q1Feedback"></div>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg1"></span>1. What is the capital of California? </h3>
+            <br>
+            <input type="text" id="q1">
+            <br><br>
+            <div id="q1Feedback"></div>
+        </div>
+    </div>
     
     <!-- Second Question -->
-    <h3><span id="markImg2"></span> What is the longest river? </h3>
-
-    <select id="q2">
-        <option value="">Select One</option>
-        <option value="ms">Mississippi</option>
-        <option value="mo">Missouri</option>
-        <option value="co">Colorado</option>
-        <option value="de">Delware</option>
-    </select>
-    <div id="q2Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg2"></span>2. What is the longest river? </h3>
+            <br>
+            <select id="q2">
+                <option value="">Select One</option>
+                <option value="ms">Mississippi</option>
+                <option value="mo">Missouri</option>
+                <option value="co">Colorado</option>
+                <option value="de">Delware</option>
+            </select>
+            <br><br>
+            <div id="q2Feedback"></div>
+        </div>
+    </div>
     
     <!-- Third Question -->
-    <h3><span id="markImg3"></span> What presidents are carved into mount Rushmore? </h3>
-    <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson </label>
-    <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin </label>
-    <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson </label>
-    <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt </label>
-    <br><br>
-    <div id="q3Feedback"></div>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg3"></span>3. What presidents are carved into mount Rushmore? </h3>
+            <br>
+            <input type="checkbox" id="Jackson"> <label for="Jackson">A. Jackson </label>
+            <input type="checkbox" id="Franklin"> <label for="Franklin">B. Franklin </label>
+            <input type="checkbox" id="Jefferson"> <label for="Jefferson">T. Jefferson </label>
+            <input type="checkbox" id="Roosevelt"> <label for="Roosevelt">T. Roosevelt </label>
+            <br><br>
+            <div id="q3Feedback"></div>
+        </div>
+    </div>
 
     <!-- Fourth Question -->
-    <h3><span id="markImg4"></span> What is the smallest US State? </h3>
-    <div id="q4Choices"></div>
-    <br><br>
-    <div id="q4Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg4"></span>4. What is the smallest US State? </h3>
+            <br>
+            <div id="q4Choices"></div>
+            <br><br>
+            <div id="q4Feedback"></div>
+        </div>
+    </div>
 
     <!-- Fifth Question -->
-    <h3><span id="markImg5"></span> What is the largest body of water in California? </h3>
-    <input type="text" id="q5">
-    <br><br>
-    <div id="q5Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg5"></span>5. What is the largest body of water in California? </h3>
+            <br>
+            <input type="text" id="q5">
+            <br><br>
+            <div id="q5Feedback"></div>
+        </div>
+    </div>
 
     <!-- Sixth Question -->
-    <h3><span id="markImg6"></span> What is the largest city Texas? </h3>
-    <select id="q6">
-        <option value="">Select One</option>
-        <option value="houston">Houston</option>
-        <option value="dallas">Dallas</option>
-        <option value="austin">Austin</option>
-        <option value="sanantonio">San Antonio</option>
-    </select>
-    <br><br>
-    <div id="q6Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg6"></span>6. What is the largest city in Texas? </h3>
+            <br>
+            <select id="q6">
+                <option value="">Select One</option>
+                <option value="houston">Houston</option>
+                <option value="dallas">Dallas</option>
+                <option value="austin">Austin</option>
+                <option value="sanantonio">San Antonio</option>
+            </select>
+            <br><br>
+            <div id="q6Feedback"></div>
+        </div>
+    </div>
 
     <!-- Seventh Question -->
-    <h3><span id="markImg7"></span> What is the tallest mountain in the US? </h3>
-    <input type="radio" id="Mt. Whitney"> <label for="Mt. Whitney">A. Mt. Whitney </label>
-    <input type="radio" id="Mt. Rainier"> <label for="Mt. Rainier">B. Mt. Rainier </label>
-    <input type="radio" id="Denali"> <label for="Denali">C. Denali </label>
-    <input type="radio" id="Mt. Elbert"> <label for="Mt. Elbert">D. Mt. Elbert </label>
-    <br><br>
-    <div id="q7Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg7"></span>7. What is the tallest mountain in the US? </h3>
+            <br>
+            <input type="radio" name="q7" id="Whitney" value="Mt. Whitney"> <label for="Whitney"> Mt. Whitney </label>
+            <input type="radio" name="q7" id="Rainier" value="Mt. Rainier"> <label for="Rainier"> Mt. Rainier </label>
+            <input type="radio" name="q7" id="Denali" value="Denali"> <label for="Denali"> Denali </label>
+            <input type="radio" name="q7" id="Elbert" value="Mt. Elbert"> <label for="Elbert"> Mt. Elbert </label>
+            <br><br>
+            <div id="q7Feedback"></div>
+        </div>
+    </div>
 
     <!-- Eighth Question -->
-    <h3><span id="markImg8"></span> Which US states are not physically connected to mainland US? </h3>
-    <input type="checkbox" id="Alaska"> <label for="Alaska">A. Alaska </label>
-    <input type="checkbox" id="Hawaii"> <label for="Hawaii">B. Hawaii </label>
-    <input type="checkbox" id="Florida"> <label for="Florida">C. Florida </label>
-    <input type="checkbox" id="Maine"> <label for="Maine">D. Maine </label>
-    <br><br>
-    <div id="q8Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg8"></span>8. Which US states are not physically connected to mainland US? </h3>
+            <br>
+            <input type="checkbox" id="Alaska"> <label for="Alaska"> Alaska </label>
+            <input type="checkbox" id="Hawaii"> <label for="Hawaii"> Hawaii </label>
+            <input type="checkbox" id="Florida"> <label for="Florida"> Florida </label>
+            <input type="checkbox" id="Maine"> <label for="Maine"> Maine </label>
+            <br><br>
+            <div id="q8Feedback"></div>
+        </div>
+    </div>
 
     <!-- Ninth Question -->
-    <h3><span id="markImg9"></span> How many Great Lakes are there? </h3>
-    <input type="number" id="q9">
-    <br><br>
-    <div id="q9Feedback"></div>
-    <br><br>
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg9"></span>9. How many Great Lakes are there? </h3>
+            <br>
+            <input type="number" id="q9">
+            <br><br>
+            <div id="q9Feedback"></div>
+
+        </div>
+    </div>
 
     <!-- Tenth Question -->
-    <h3><span id="markImg10"></span> How many states are in the US? </h3>
-    <input type="range" id="q10" min="49" max="55" step="1" value="50">
-    <label for="q10">Answer: <span id="q10Value">50</span></label>
-
-    <br><br>
-    <div id="q10Feedback"></div>
-    <br><br>
-
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3><span id="markImg10"></span>10. How many states are in the US? </h3>
+            <br>
+            <input type="range" id="q10" min="49" max="55" step="1" value="50">
+            <label for="q10">Answer: <span id="q10Value">50</span></label>
+            <br><br>
+            <div id="q10Feedback"></div>
+        </div>
+    </div>
+    <br>
     <h3 id="validationFdbk" class="bg-danger text-white"></h3>
     <button class="btn btn-outline-primary"> Submit Quiz </button>
+    <br>
     <h2 id="totalScore" class="text-info"></h2>
     <h3 id="totalAttempts"></h3>
-    
+        </div>
+     </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
