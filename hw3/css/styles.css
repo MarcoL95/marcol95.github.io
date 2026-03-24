@@ -71,3 +71,9 @@ button {
 .description {
     text-align: center;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
