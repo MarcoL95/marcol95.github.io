@@ -5,9 +5,26 @@
     }
 </style>
 <%- include('partials/head.ejs') %>
-    <h1>The Solar System</h1>
+    <header><h1>The Solar System</h1></header>
 <%- include('partials/nav.ejs') %>
+    <hr>
     <img src="/img/solar-system.jpg">
+    <hr>
+
+    <div> 
+    <h2>NASA Photo of the Day</h2>
+    </div>
+    
+    <div class="card">
+    <h2><%= apod.title %></h2>
+
+    <img src="<%= apod.url %>" alt="NASA Image">
+
+    <p><strong>Date:</strong> <%= apod.date %></p>
+
+    <p><%= apod.explanation %></p>
+    </div>
+
 <%- include('partials/footer.ejs') %>
 </body>
 </html>
