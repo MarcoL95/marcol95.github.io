@@ -1,0 +1,74 @@
+<%- include('partials/head.ejs') %>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Software Development Lifecycle</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+<%- include('partials/nav.ejs') %>
+
+    <!-- Main Content -->
+    <main>
+        <div id="quote">
+            <h3>💻 Developer Quote of the Day:</h3>
+            <p>"<%= quote.quote %>"</p>
+            <p>- <%= quote.cite %></p>
+        </div>
+
+        <section>
+            <h2>Welcome!</h2>
+            <p>
+                This website explains the software development lifecycle and some of the models used in software engineering.
+            </p>
+        </section>
+
+        <img src="<%= image.webformatURL %>" alt="Software Development Image" class="sdlc-image">
+
+        <article>
+            <h3>What is the Software Development Lifecycle?</h3>
+            <p>
+                The software development lifecycle (SDLC) is a process that involves a series of steps to design, develop, test, and deploy software applications. It provides a structured approach to software development, ensuring that projects are completed efficiently and effectively. The SDLC typically includes phases such as planning, analysis, design, implementation, testing, deployment, and maintenance.
+            </p>
+        </article>
+
+        <article>
+            <h3>Why is the SDLC Important?</h3>
+            <p>
+                The SDLC is important because it brings structure and organization to software development. Without a defined process, teams may overlook requirements, exceed budgets, or release software that contains significant errors. A structured lifecycle allows teams to plan projects carefully, manage risks, maintain quality through testing, and estimate timelines and costs more accurately.
+            </p>
+            <br>
+            <p>
+                There are several different SDLC models that organizations use to guide development projects. Each model follows the general stages of planning, development, testing, and deployment, but they organize these stages in different ways. Some models focus on step-by-step development, while others emphasize flexibility and continuous improvement. The following pages explore three common SDLC models: the Waterfall Model, Agile Development Model, and Spiral Model, each of which provides a different approach to managing the software development process.
+            </p>
+        </article>
+
+          <!-- Button at end of content -->
+        <section class="button-section">
+            <a href="/waterfall" class="button-link">Waterfall Model</a>
+        </section>
+
+        <section class="sources">
+            <h4>Sources</h4>
+            <ul>
+                <li>
+                    <a href="https://www.geeksforgeeks.org/software-engineering/software-development-life-cycle-sdlc/" target="_blank">
+                        GeeksforGeeks – Software Development Life Cycle
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://pixabay.com/vectors/cycle-process-arrows-design-cutout-7301570/" target="_blank">
+                        Image from Pixabay
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+<%- include('partials/footer.ejs') %>
+</body>
+
+</html>
